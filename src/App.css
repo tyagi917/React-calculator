@@ -1,38 +1,68 @@
-.App {
+  
+* {
+  box-sizing: border-box;
+}
+
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.outer-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(lightgreen, white, lightpink);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.display {
+  height: 100px;
+  max-width: 400px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: bold;
+  background-color: black;
   color: white;
+  word-break: break-all;
+  border: 1.5px #888 solid;
+  font-size: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.calc-body {
+  max-width: 400px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.keypad button {
+  width: 25%;
+  height: 60px;
+  font-size: 25px;
+  font-weight: lighter;
+  background-color: #e0e1e6;
+  color: #888;
+  border: 1.5px #888 solid;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.6;
+}
+
+.operator {
+  color: #fff !important;
+  background-color: #fe9241 !important;
+}
+
+.equals {
+  color: white !important;
+  background-color: #fe4141 !important;
 }
